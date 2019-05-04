@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="Game.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Game"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Windows10version1809="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 7)"
+    xmlns:Windows10FallCreatorsUpdate="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 5)"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Color x:Key="GradientStopColor1">White</Color>
+    </Page.Resources>
+
+    <Grid>
+        <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0" VerticalAlignment="Stretch">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+            </Grid.Background>
+            <Grid.FocusVisualPrimaryBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="{StaticResource GradientStopColor1}" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.FocusVisualPrimaryBrush>
+            <Button Content="NEW GAME" HorizontalAlignment="Center" Margin="0,249,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Canvas.ZIndex="-13" Height="55" Click="Button_Click_1" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="HIGH SCORE"  HorizontalAlignment="Center" Margin="0,338,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Height="53" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_6">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="SETTING"  HorizontalAlignment="Center" Margin="0,431,0,0" VerticalAlignment="Top" Width="274" FontFamily="Algerian" FontSize="24" FontWeight="Normal" Height="54" BorderThickness="0,0,0,0" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_4">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="ABOUT"  HorizontalAlignment="Center" Margin="0,528,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Height="55" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_3">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="EXIT" HorizontalAlignment="Center" Margin="0,626,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Height="54" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_5">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+            <TextBlock HorizontalAlignment="Center" Margin="0,31,0,0" Text="GET THE GLITCH" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="305" FontFamily="Chiller" FontSize="48" FontWeight="Bold"/>
+            <Button Content="New Game" HorizontalAlignment="Left" Margin="403,138,0,0" VerticalAlignment="Top" Height="41" Width="181" FontFamily="Algerian" Foreground="White" FontSize="16" Click="Button_Click_7">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="High Score" HorizontalAlignment="Left" Margin="584,139,0,0" VerticalAlignment="Top" Height="41" Width="181" FontFamily="Algerian" FontSize="16" Foreground="White" Click="Button_Click_8">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Settings" HorizontalAlignment="Left" Margin="765,138,0,0" VerticalAlignment="Top" Height="41" Width="181" Foreground="White" FontFamily="Algerian" FontSize="16" Click="Button_Click_9">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+            <Button Content="about" HorizontalAlignment="Left" Margin="945,136,0,0" VerticalAlignment="Top" Height="41" Width="181" FontFamily="Algerian" FontSize="16" Foreground="White" Click="Button_Click_10">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Page>
