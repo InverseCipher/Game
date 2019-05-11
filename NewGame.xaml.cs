@@ -17,6 +17,8 @@ using System.Threading.Tasks;
 using Windows.Storage.Pickers;
 using Windows.Storage;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.Media.Playback;
+using Windows.Media.Core;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Game
@@ -27,22 +29,17 @@ namespace Game
     public sealed partial class NewGame : Page
     {
         public static BitmapImage Source { get; private set; }
-
+        MediaPlayer player;
         public NewGame()
         {
             this.InitializeComponent();
+            player = new MediaPlayer(); 
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += (s, e) =>
             {
                 this.Frame.Navigate(typeof(MainPage));
             };
         }
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -83,9 +80,15 @@ namespace Game
 
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private async void Button_Click_3(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GamePlay));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
 
         private async void Buttonfilepick_Click(object sender, RoutedEventArgs e)
@@ -112,48 +115,101 @@ namespace Game
                 textblockoutput.Text = "Try Again..";
             }
 
-            
-            
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file1 = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
+
         }
 
-        private void Image_PointerPressed_5(object sender, PointerRoutedEventArgs e)
+        private async void Image_PointerPressed_5(object sender, PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GamePlay));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
 
-        private void Image_PointerPressed_6(object sender, PointerRoutedEventArgs e)
+        private async void Image_PointerPressed_6(object sender, PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GamePlay));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
 
-        private void Image_PointerPressed_7(object sender, PointerRoutedEventArgs e)
+        private async void Image_PointerPressed_7(object sender, PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GamePlay));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
 
-        private void Image_PointerPressed_8(object sender, PointerRoutedEventArgs e)
+        private async void Image_PointerPressed_8(object sender, PointerRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(GamePlay));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private async void Button_Click_4(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(NewGame));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
+        private async void Button_Click_5(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MyHighScore));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
 
-        private void Button_Click_6(object sender, RoutedEventArgs e)
+        private async void Button_Click_6(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Setting));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
 
-        private void Button_Click_7(object sender, RoutedEventArgs e)
+        private async void Button_Click_7(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(About));
+            Windows.Storage.StorageFolder folder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync(@"Assets");
+            Windows.Storage.StorageFile file = await folder.GetFileAsync("soundEffect.mp3");
+
+            player.AutoPlay = false;
+            player.Source = MediaSource.CreateFromStorageFile(file);
+            player.Play();
         }
     }
 }

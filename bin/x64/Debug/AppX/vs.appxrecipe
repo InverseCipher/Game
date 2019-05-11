@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-05-10T08:57:00.794</Modified>
+      <Modified>2019-05-11T21:27:36.075</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\Game.exe">
       <PackagePath>entrypoint\Game.exe</PackagePath>
-      <Modified>2019-05-10T08:56:58.433</Modified>
+      <Modified>2019-05-11T21:27:34.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -552,6 +552,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-03-11T00:50:55.555</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\Assets\soundEffect.mp3">
+      <PackagePath>Assets\soundEffect.mp3</PackagePath>
+      <Modified>2019-05-11T20:56:54.392</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\Assets\wood _texture33.jpg">
       <PackagePath>Assets\wood _texture33.jpg</PackagePath>
       <Modified>2019-04-11T20:27:48.753</Modified>
@@ -566,31 +570,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-05-10T08:56:57.894</Modified>
+      <Modified>2019-05-11T21:27:34.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\About.xbf">
       <PackagePath>About.xbf</PackagePath>
-      <Modified>2019-05-10T08:56:57.866</Modified>
+      <Modified>2019-05-11T21:27:34.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\GamePlay.xbf">
       <PackagePath>GamePlay.xbf</PackagePath>
-      <Modified>2019-05-10T08:56:57.897</Modified>
+      <Modified>2019-05-11T21:27:34.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-05-10T08:56:57.898</Modified>
+      <Modified>2019-05-11T21:27:34.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\MyHighScore.xbf">
       <PackagePath>MyHighScore.xbf</PackagePath>
-      <Modified>2019-05-10T08:56:57.899</Modified>
+      <Modified>2019-05-11T21:27:34.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\NewGame.xbf">
       <PackagePath>NewGame.xbf</PackagePath>
-      <Modified>2019-05-10T08:56:57.890</Modified>
+      <Modified>2019-05-11T21:27:34.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\Setting.xbf">
       <PackagePath>Setting.xbf</PackagePath>
-      <Modified>2019-05-10T08:56:57.902</Modified>
+      <Modified>2019-05-11T21:27:34.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -598,11 +602,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-05-04T18:26:18.457</Modified>
+      <Modified>2019-05-11T21:02:21.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\study\5th semester\Visual Programming\project\Game\Game\bin\x64\Debug\Core\Game.exe">
       <PackagePath>Game.exe</PackagePath>
-      <Modified>2019-05-10T08:57:00.767</Modified>
+      <Modified>2019-05-11T21:27:36.048</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
