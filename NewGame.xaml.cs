@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Navigation;
 using System.Threading.Tasks;
 using Windows.Storage.Pickers;
 using Windows.Storage;
+using Windows.UI.Xaml.Media.Imaging;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Game
@@ -25,6 +26,8 @@ namespace Game
     /// </summary>
     public sealed partial class NewGame : Page
     {
+        public static BitmapImage Source { get; private set; }
+
         public NewGame()
         {
             this.InitializeComponent();
@@ -87,6 +90,7 @@ namespace Game
 
         private async void Buttonfilepick_Click(object sender, RoutedEventArgs e)
         {
+           // GamePlay gp = new GamePlay();
             FileOpenPicker openPicker = new FileOpenPicker();
             openPicker.ViewMode = PickerViewMode.Thumbnail;
             openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
@@ -94,14 +98,20 @@ namespace Game
             openPicker.FileTypeFilter.Add(".jpeg");
             openPicker.FileTypeFilter.Add(".png");
             StorageFile file = await openPicker.PickSingleFileAsync();
+            
             if (file != null)
             {
                 textblockoutput.Text = "Selected File:" + file.Path;
+                var stream = await file.OpenAsync(Windows.Storage.FileAccessMode.Read);
+                var image = new BitmapImage();
+                image.SetSource(stream);
+                imageview.Source = image;
             }
             else
             {
                 textblockoutput.Text = "Try Again..";
             }
+
             
             
         }

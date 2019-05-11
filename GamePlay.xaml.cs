@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
@@ -27,6 +28,8 @@ namespace Game
         {
             this.InitializeComponent();
         }
+
+        public static BitmapImage Source { get; internal set; }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -51,6 +54,11 @@ namespace Game
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             Application.Current.Exit();
+        }
+
+        private void Hint_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

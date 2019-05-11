@@ -19,7 +19,7 @@
             <Image HorizontalAlignment="Left" Height="124" Margin="43,299,0,0" VerticalAlignment="Top" Width="123" Source="/Assets/Square44x44Logo.png"/>
             <Image HorizontalAlignment="Left" Height="123" Margin="228,299,0,0" VerticalAlignment="Top" Width="123" Source="/Assets/Square44x44Logo.png"/>
             <Button x:Name="hint" Content="Hint" Windows10version1809:CornerRadius="15,15,15,15" HorizontalAlignment="Center" VerticalAlignment="Center" Height="41" Width="181" FontSize="16" FontFamily="Algerian" Foreground="White"/>
-            <Image HorizontalAlignment="Center" Height="165" Margin="0,598,0,0" VerticalAlignment="Top" Width="165" Source="/Assets/StoreLogo.png" >
+            <Image x:Name="hintimg" HorizontalAlignment="Center" Height="165" Margin="0,598,0,0" VerticalAlignment="Top" Width="165" Source="/Assets/StoreLogo.png" >
                 <Image.FocusVisualPrimaryBrush>
                     <ImageBrush ImageSource="/Assets/StoreLogo.png"/>
                 </Image.FocusVisualPrimaryBrush>

@@ -24,22 +24,22 @@
                     <GradientStop Color="{StaticResource GradientStopColor1}" Offset="1"/>
                 </LinearGradientBrush>
             </Grid.FocusVisualPrimaryBrush>
-            <Button Content="NEW GAME" HorizontalAlignment="Center" Margin="0,249,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Canvas.ZIndex="-13" Height="55" Click="Button_Click_1" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15">
+            <Button x:Name="NewGamebtn" Content="NEW GAME" HorizontalAlignment="Center" Margin="0,249,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Canvas.ZIndex="-13" Height="55" Click="Button_Click_1" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="HIGH SCORE"  HorizontalAlignment="Center" Margin="0,338,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Height="53" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_6">
+            <Button x:Name="HighScorebtn" Content="HIGH SCORE"  HorizontalAlignment="Center" Margin="0,338,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Height="53" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_6">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="SETTING"  HorizontalAlignment="Center" Margin="0,431,0,0" VerticalAlignment="Top" Width="274" FontFamily="Algerian" FontSize="24" FontWeight="Normal" Height="54" BorderThickness="0,0,0,0" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_4">
+            <Button x:Name="Settingbtn" Content="SETTING"  HorizontalAlignment="Center" Margin="0,431,0,0" VerticalAlignment="Top" Width="274" FontFamily="Algerian" FontSize="24" FontWeight="Normal" Height="54" BorderThickness="0,0,0,0" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_4">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
                 </Button.Background>
             </Button>
-            <Button Content="ABOUT"  HorizontalAlignment="Center" Margin="0,528,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Height="55" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_3">
+            <Button x:Name="Aboutbtn" Content="ABOUT"  HorizontalAlignment="Center" Margin="0,528,0,0" VerticalAlignment="Top" Width="273" FontFamily="Algerian" FontSize="24" FontWeight="Normal" BorderThickness="0,0,0,0" Height="55" FocusVisualPrimaryBrush="#FF060606" Foreground="White" Windows10version1809:CornerRadius="15,15,15,15" Click="Button_Click_3">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/wood _texture33.jpg"/>
                 </Button.Background>
